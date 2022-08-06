@@ -1,4 +1,11 @@
-function rever(a){
-    let x=+a.toString().split('').reverse().join('');
- } ;
-rever(); 
+module.exports = function reverse (n) {
+    if(n > 0){
+    n = n + "";
+    return n.split("").reverse().join("");
+}
+if(n < 0){
+    n = -n + "";
+    return n.split("").reverse().join("");
+}
+
+}
